@@ -1,0 +1,15 @@
+# 运行依赖
+#   - pystray  (系统托盘图标 + 菜单)
+#   - Pillow   (托盘图标绘制 + bar 逐像素 alpha 合成)
+# 其余为 Python 标准库：tkinter / ctypes / winreg / json
+#
+# 安装:  pip install -r requirements.txt
+
+pystray>=0.19
+Pillow>=10.0
+sv-ttk>=2.6        # 设置窗 Win11 Fluent 主题
+
+# 打包 exe 用（仅构建时需要）：
+#   pip install pyinstaller
+#   然后运行 build.ps1 / build.sh
+# pyinstaller>=6.0
